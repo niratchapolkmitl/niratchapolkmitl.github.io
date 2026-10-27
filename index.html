@@ -606,7 +606,7 @@ const CONFIG = {
   // TODO: ใส่ลิงก์ GitHub จริงของโครงงานที่นี่
   GITHUB_URL: 'https://github.com/niratchapolkmitl/hopit',
   // TODO: ใส่รหัสวิดีโอ YouTube จริงที่นี่ (เช่น ส่วนหลัง v= ในลิงก์) แทนที่ YOUR_VIDEO_ID
-  YOUTUBE_VIDEO_ID: 'YOUR_VIDEO_ID'
+  YOUTUBE_VIDEO_ID: 'VLvtjKpB4-o'
 };
 
 /* ==========================================================
@@ -837,7 +837,7 @@ document.getElementById('repoUrlText').textContent = CONFIG.GITHUB_URL;
   const id = CONFIG.YOUTUBE_VIDEO_ID;
   if(!id || id === 'YOUR_VIDEO_ID') return; // ยังไม่ได้ตั้งค่า: แสดงกล่องแจ้งแทน
   const f = document.createElement('iframe');
-  f.src = 'https://youtu.be/VLvtjKpB4-o' + encodeURIComponent(id);
+  f.src = 'https://www.youtube.com/embed/' + encodeURIComponent(id);
   f.title = 'วิดีโอสาธิตการทำงานของ HOPIT';
   f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
   f.allowFullscreen = true; f.loading = 'lazy';
