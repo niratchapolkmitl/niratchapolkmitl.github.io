@@ -837,7 +837,7 @@ document.getElementById('repoUrlText').textContent = CONFIG.GITHUB_URL;
   const id = CONFIG.YOUTUBE_VIDEO_ID;
   if(!id || id === 'YOUR_VIDEO_ID') return; // ยังไม่ได้ตั้งค่า: แสดงกล่องแจ้งแทน
   const f = document.createElement('iframe');
-  f.src = 'https://www.youtube.com/embed/' + encodeURIComponent(id);
+  f.src = 'https://youtu.be/VLvtjKpB4-o' + encodeURIComponent(id);
   f.title = 'วิดีโอสาธิตการทำงานของ HOPIT';
   f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
   f.allowFullscreen = true; f.loading = 'lazy';
